@@ -1,0 +1,264 @@
+   h1{
+    font-style: italic;
+    font-size: 50px;
+    margin: 10px 0;
+    color: rgba(255, 255, 255, 0.8);
+    
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #f9f9f9;
+
+}
+header,footer{
+    background: #3240a8;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    
+}
+nav{
+    background: #ddd;
+    padding: 10px;
+    text-align: center;
+
+}
+nav a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: #3240a8;
+    font-weight: bold;
+}
+main{
+    padding: 20px;
+    background: #fff;
+    margin: 20px auto;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(50, 64, 168, 0.1);
+    
+    
+}
+section{
+    margin: 20px auto;
+    max-width: 700px;
+    background: #e9e9ff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+h2, h3{
+    text-align: center;
+    color: #3240a8;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+li{
+    margin-bottom: 5px;
+}
+
+/* CSS yang dipindahkan dari HTML internal */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.service-item {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.project-item {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.project-preview {
+    height: 150px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.project-preview.gradient1 {
+    background: linear-gradient(45deg, #3240a8, #6670ff);
+}
+
+.project-preview.gradient2 {
+    background: linear-gradient(45deg, #ff6b6b, #ff8787);
+}
+
+.project-preview.gradient3 {
+    background: linear-gradient(45deg, #4ecdc4, #44a08d);
+}
+.project-preview.gradient4{
+    background: linear-gradient(45deg, aqua, aqua);
+    
+}
+
+.project-title {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.testimonial {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.testimonial-text {
+    font-style: italic;
+    color: black;
+}
+
+.testimonial-author {
+    text-align: right;
+}
+
+.subscription-form {
+    text-align: center;
+}
+
+.subscription-form input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.subscription-form button {
+    padding: 10px 20px;
+    background: #3240a8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+}
+
+/* DEKORASI CSS UNTUK LINK SOSIAL MEDIA */
+
+/* Container utama untuk link sosial */
+.social-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* Style untuk setiap link */
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Warna khusus untuk setiap platform */
+.facebook {
+    background: linear-gradient(45deg, #1877f2, #42A5F5);
+}
+
+.instagram {
+    background: linear-gradient(45deg, #E4405F, #F77737, #FCAF45);
+}
+
+.linkedin {
+    background: linear-gradient(45deg, #0A66C2, #0077B5);
+}
+
+/* Efek hover */
+.social-links a:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Efek ripple saat hover */
+.social-links a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255,255,255,0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.social-links a:hover::before {
+    width: 100px;
+    height: 100px;
+}
+
+/* Animasi pulse untuk attention */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(102, 126, 234, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(102, 126, 234, 0);
+    }
+}
+
+.social-links {
+    animation: pulse 2s infinite;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .social-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .social-links a {
+        width: 50px;
+        height: 50px;
+        font-size: 12px;
+    }
+}
+
